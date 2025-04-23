@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+{% block title %}Anna - Дизайнер и Frontend Developer{% endblock %}
+
+{% block content %}
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-12 col-md-12 mx-auto">
+        <img src="/static/anna.webp" width="200" height="250" style="object-fit: cover;" class="rounded-circle" alt="Anna">
+        <h1 class="fw-light mt-3">Anna</h1>
+        <p class="lead text-body-secondary">
+          Анна Соколова — фронтенд-разработчик и UI/UX дизайнер, для которой код и эспрессо — два главных источника вдохновения. Выпускница Высшей школы экономики (НИУ ВШЭ, Москва), она совмещает техническую хватку с творческим подходом: может за день сверстать сложный интерфейс, а вечером — нарисовать пиксель-арт за кружкой крафтового IPA. Последние два года погрузилась в мир кибербезопасности, работая в стартапе над нейросетью для автоматического пентеста. Её главный проект — AI-система, которая ищет уязвимости в веб-приложениях и генерирует отчеты «как для людей, так и для роботов». В свободное время экспериментирует с созданием интерактивных тренажеров для обучения этичному хакингу, а еще — коллекционирует странные кофейные чашки и знает наизусть все крафтовые бары в радиузе пяти станций метро. Говорит, что идеальный код, как и идеальное пиво, должен быть прозрачным, сбалансированным и без лишних «взрывов»
+        </p>
+        <p>
+          <a href="#projects" class="btn btn-primary my-2">Мои проекты</a>
+          <a href="#skills" class="btn btn-secondary my-2">Навыки</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-body-tertiary" id="projects">
+    <div class="container">
+      <h2 class="text-center mb-4">Мои последние проекты</h2>
+      
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/cyberai.webp" width="100%" height="225" style="object-fit: cover;" alt="NeuralPentest AI">
+            <div class="card-body">
+              <h5 class="card-title">NeuralPentest AI</h5>
+              <p class="card-text">
+                Участвую в разработке нейросети для автоматического пентестинга веб-приложений. 
+                Отвечаю за интерфейс анализатора уязвимостей и визуализацию отчетов.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+                </div>
+                <small class="text-body-secondary">2023-наст. время</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/secure-dashboard.webp" width="100%" height="225" style="object-fit: cover;" alt="Security Dashboard">
+            <div class="card-body">
+              <h5 class="card-title">Security Dashboard</h5>
+              <p class="card-text">
+                Дизайн и фронтенд для панели мониторинга кибербезопасности с D3.js визуализацией 
+                атак и уязвимостей. Реализовала механизм real-time оповещений.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+                </div>
+                <small class="text-body-secondary">2022</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/lfi-trainer.webp" width="100%" height="225" style="object-fit: cover;" alt="LFI Trainer">
+            <div class="card-body">
+              <h5 class="card-title">Web Security Trainer</h5>
+              <p class="card-text">
+                Образовательная платформа для тренировки навыков кибербезопасности. 
+                Разработала интерактивные задания по эксплуатации LFI, XSS и SQLi уязвимостей.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+                </div>
+                <small class="text-body-secondary">2021</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5" id="skills">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="mb-4">Мои навыки</h2>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Frontend Development</h5>
+            <ul>
+              <li>React.js / Vue.js</li>
+              <li>TypeScript</li>
+              <li>D3.js для визуализации данных</li>
+              <li>Web Security Best Practices</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">UI/UX Design</h5>
+            <ul>
+              <li>Figma / Adobe XD</li>
+              <li>Дизайн систем безопасности</li>
+              <li>User Flow для сложных интерфейсов</li>
+              <li>Прототипирование</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <h2 class="mb-4">Кибербезопасность</h2>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Security Knowledge</h5>
+            <ul>
+              <li>OWASP Top 10</li>
+              <li>Pentesting basics</li>
+              <li>Анализ уязвимостей веб-приложений</li>
+              <li>Secure Coding Practices</li>
+              <li>Работа с Burp Suite</li>
+            </ul>
+            <p class="mt-3">
+              В настоящее время углубленно изучаю применение машинного обучения 
+              в области анализа уязвимостей и автоматического пентестинга.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}

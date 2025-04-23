@@ -20,10 +20,17 @@ def company_service():
 def company_partner():
     return render_template("partner.html")
 
-@app.route("/user/<username>")
-def user(username):
-    return render_template("user.html", user=username) #для уязвимости типа idor. Сделаем тестовую страницу админа/разраба и на нее засунем что нибудь
 
+dict_of_employees = {0:"tony",  1: "anna", 2: "bob", 3: "nik", 4: "dima" }
+
+
+
+@app.route("/employees")
+def user():
+    id = request.args.get("id")
+    id = int(id)
+    employee_name = dict_of_employees.get(id, "anna")  
+    return render_template(f"employees/{dict_of_employees[id]}.html", id = id)
 
 if __name__ == "__main__":
     app.run(debug=True)
