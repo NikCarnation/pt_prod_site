@@ -1,103 +1,92 @@
 {% extends 'base.html' %}
 
-{% block title %}О нас{% endblock %}
+{% block title %}О компании | CyberGuardian AI{% endblock %}
 
 {% block content %}
 <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
   <div class="col-12 px-0">
-    <h1 class="display-4 fst-italic">О нас</h1>
-    <p class="lead my-3">Информация о нашей компании и команде.</p>
-    <p class="lead mb-0"><a href="/employees?id=1" class="text-body-emphasis fw-bold">Anna</a></p>
-    <p class="lead mb-0"><a href="/employees?id=2" class="text-body-emphasis fw-bold">Bob</a></p>
-    <p class="lead mb-0"><a href="/employees?id=3" class="text-body-emphasis fw-bold">Nik</a></p>
-    <p class="lead mb-0"><a href="/employees?id=4" class="text-body-emphasis fw-bold">Dima</a></p>
+    <h1 class="display-4 fst-italic">Киберзащита будущего — уже сегодня</h1>
+    <p class="lead my-3">Основанная 3 августа 2023 года во Владивостоке Антоном Старковым, CyberGuardian AI за два года создала несколько проектов, которые уже увидели мир. За нами будущее информационной безопасности! </p>
+  </div>
+</div>
+
+
+<div class="mt-4">
+  <h4>Наша команда</h4>
+  <div class="d-grid gap-2 md-2">
+    <a href="#" class="btn btn-outline-primary me-2">💻 Антон Старков - генеральный директор и основатель компании</a>
+    <a href="/employees?id=1" class="btn btn-outline-primary md-2">👩 Анна - фронтенд разработчик, дизайнер, аналитик безопасности</a>
+    <a href="/employees?id=2" class="btn btn-outline-primary me-2">🛡️ Борис - бэкенд-разработчик и пентестер</a>
+    <a href="/employees?id=3" class="btn btn-outline-primary mb-2">🤖 Никола - Главный ML-инженер</a>
+    <a href="/employees?id=4" class="btn btn-outline-primary mb-2">🔐 Дима - Архитектор безопасности</a>
   </div>
 </div>
 
 <div class="row mb-2">
   <div class="col-md-6">
-    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 ">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250">
       <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
-        <h3 class="mb-0">Заголовок поста</h3>
-        <div class="mb-1 text-body-secondary">Nov 12</div>
-        <p class="card-text mb-auto">Описание контента поста, краткий обзор.</p>
+        <strong class="d-inline-block mb-2 text-primary-emphasis">Технологии</strong>
+        <h3 class="mb-0">Как мы защищаем?</h3>
+        <div class="mb-1 text-body-secondary">AI + Threat Intelligence</div>
+        <p class="card-text mb-auto">Используем нейросети для прогнозирования атак, анализа поведения и обнаружения аномалий в реальном времени.</p>
+        <ul class="mt-2">
+          <li>150+ детекторов угроз</li>
+          <li>Ежеминутное обновление баз</li>
+          <li>Автономные сценарии реагирования</li>
+        </ul>
       </div>
       <div class="col-auto d-none d-lg-block">
-        <img src="/static/f69ea3e0a17f4c23cc394d977b99e113.webp" width="200" height="250" style="object-fit: cover;" alt="Превью">
+        <img src="/static/ai-security.webp" width="200" height="250" style="object-fit: cover;" alt="ИИ-анализ угроз">
       </div>
     </div>
   </div>
 
   <div class="col-md-6">
-    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 ">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250">
       <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
-        <h3 class="mb-0">Дизайн и идеи</h3>
-        <div class="mb-1 text-body-secondary">Nov 11</div>
-        <p class="card-text mb-auto">Идеи и вдохновение для дизайна.</p>
+        <strong class="d-inline-block mb-2 text-success-emphasis">Миссия</strong>
+        <h3 class="mb-0">Почему мы?</h3>
+        <div class="mb-1 text-body-secondary">Результаты за 2 года</div>
+        <p class="card-text mb-auto">Защитили 20 000+ цифровых активов и предотвратили ущерб на $450 млн для клиентов из 15 стран.</p>
+        <div class="bg-light p-2 mt-2 rounded">
+          <small>«Наша цель — сделать безопасность не барьером, а естественной частью разработки»</small>
+        </div>
       </div>
       <div class="col-auto d-none d-lg-block">
-        <img src="/static/i.webp" width="200" height="250" style="object-fit: cover;" alt="Превью">
+        <img src="/static/team.webp" width="200" height="250" style="object-fit: cover;" alt="Команда">
       </div>
     </div>
   </div>
-  <article class="blog-post">
-    <h2 class="display-5 link-body-emphasis mb-1">Sample blog post</h2>
-    <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
-
-    <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-    <hr>
-    <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-    <h2>Blockquotes</h2>
-    <p>This is an example blockquote in action:</p>
-    <blockquote class="blockquote">
-      <p>Quoted text goes here.</p>
-    </blockquote>
-    <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-    <h3>Example lists</h3>
-    <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
-    <ul>
-      <li>First list item</li>
-      <li>Second list item with a longer description</li>
-      <li>Third list item to close it out</li>
-    </ul>
-    <p>And this is an ordered list:</p>
-    <ol>
-      <li>First list item</li>
-      <li>Second list item with a longer description</li>
-      <li>Third list item to close it out</li>
-    </ol>
-    <p>And this is a definition list:</p>
-    <dl>
-      <dt>HyperText Markup Language (HTML)</dt>
-      <dd>The language used to describe and define the content of a Web page</dd>
-      <dt>Cascading Style Sheets (CSS)</dt>
-      <dd>Used to describe the appearance of Web content</dd>
-      <dt>JavaScript (JS)</dt>
-      <dd>The programming language used to build advanced Web sites and applications</dd>
-    </dl>
-    <h2>Inline HTML elements</h2>
-    <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
-    <ul>
-      <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
-      <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
-      <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
-      <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
-      <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
-      <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
-    </ul>
-    <p>Most of these elements are styled by browsers with few modifications on our part.</p>
-    <h2>Heading</h2>
-    <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-    <h3>Sub-heading</h3>
-    <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-    <pre><code>Example code block</code></pre>
-    <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
-  </article>
-  <div>
-    <ul class="list-unstyled">
-    </ul>
-  </div>
 </div>
+
+<article class="blog-post">
+  <h2 class="display-5 link-body-emphasis mb-3">От стартапа до глобального игрока</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Наши принципы</h3>
+      <p>🔒 <strong>Прозрачность:</strong> Полный доступ к исходникам алгоритмов для корпоративных клиентов.<br>
+      🚀 <strong>Инновации:</strong> 15% выручки инвестируем в R&D.<br>
+      🌍 <strong>Этика:</strong> Строгий запрет на использование ИИ в военных целях.</p>
+    </div>
+    <div class="col-md-6">
+      <h3>Ключевые решения</h3>
+      <ul>
+        <li>GuardianScan — аудит веб-приложений</li>
+        <li>InfraShield — защита облачной инфраструктуры</li>
+        <li>CodeSentinel — анализ исходного кода в Git</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="my-4">
+
+  <h3>Наши партнёры</h3>
+  <div class="row row-cols-3 g-4 text-center">
+    <div class="col"><img src="/static/partner-aws.svg" alt="AWS" height="40"></div>
+    <div class="col"><img src="/static/partner-microsoft.svg" alt="Microsoft" height="40"></div>
+    <div class="col"><img src="/static/partner-roscomnadzor.svg" alt="Роскомнадзор" height="40"></div>
+  </div>
+</article>
+
 {% endblock %}

@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+
+{% block title %}Николай | CyberGuardian AI{% endblock %}
+
+{% block content %}
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <img src="/static/nikola.png" width="200" height="250" style="object-fit: cover;" class="rounded-circle" alt="Николай">
+        <h1 class="fw-light mt-3">Николай </h1>
+        <p class="lead text-body-secondary">
+          Специалист по ИБ · ML инженер · Охотник за аномалиями
+        </p>
+        <p class="card-text">
+            Выпускник МФТИ и школы параноидального ML: 5 лет учит нейросети ловить хакеров.<br>
+            Превращает TensorFlow в цифровую ловушку для киберугроз. Способен найти needle-in-haystack в 10 петабайтах логов.<br>
+            <br>Фанат трёх "Н": нейросети, нормальное распределение и напитки с кофеином.<br>
+            Автор правила: "Если accuracy меньше 99.9% — это не security, а security theater".
+          </p>
+        <p>
+          <a href="#projects" class="btn btn-primary my-2">Мои ловушки</a>
+          <a href="#skills" class="btn btn-secondary my-2">Мои алгоритмы</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-body-tertiary" id="projects">
+    <div class="container">
+      <h2 class="text-center mb-4">Интеллектуальные силки</h2>
+      
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/TI.jpg" width="100%" height="225" style="object-fit: cover;" alt="AI Threat Hunter">
+            <div class="card-body">
+              <h5 class="card-title">DeepThreat</h5>
+              <p class="card-text">
+                Система обнаружения APT-атак с использованием Graph Neural Networks. 
+                Анализирует 1 млн событий/сек с точностью 99.98%. Интеграция с Splunk.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Research Paper</button>
+                </div>
+                <small class="text-body-secondary">2023-наст. время</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/phishing.webp" width="100%" height="225" style="object-fit: cover;" alt="Phishing Net">
+            <div class="card-body">
+              <h5 class="card-title">PhishBERT</h5>
+              <p class="card-text">
+                NLP-модель для детектирования фишинга с контекстным анализом. 
+                Распознает 98.7% сложных многоэтапных атак. Поддержка 32 языков.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Демо</button>
+                </div>
+                <small class="text-body-secondary">2024</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/malware.webp" width="100%" height="225" style="object-fit: cover;" alt="Malware Matrix">
+            <div class="card-body">
+              <h5 class="card-title">MalwareDNA</h5>
+              <p class="card-text">
+                Генеративно-состязательная сеть для анализа вредоносного ПО. 
+                Автоматически генерирует сигнатуры для 0-day угроз. Топ-1 на VirusTotal.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Тестировать</button>
+                </div>
+                <small class="text-body-secondary">2022</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5" id="skills">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="mb-4">Арсенал Data Scientist</h2>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">ML/DL Экспертиза</h5>
+            <ul>
+              <li>TensorFlow/PyTorch Security</li>
+              <li>Anomaly Detection Models</li>
+              <li>Adversarial Attacks/Defenses</li>
+              <li>Federated Learning для ИБ</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Обработка данных</h5>
+            <ul>
+              <li>Apache Spark для логов</li>
+              <li>Feature Engineering угроз</li>
+              <li>AutoML в Suricata Rules</li>
+              <li>GPU-оптимизация анализа</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <h2 class="mb-4">Трофеи охотника</h2>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Достижения</h5>
+            <ul>
+              <li>Уменьшил FP в SOC на 94%</li>
+              <li>Победитель Kaggle AI Security Challenge</li>
+              <li>Автор патента "Метод обнаружения slow-burn атак"</li>
+              <li>Обнаружил 3 APT-группировки через ML</li>
+            </ul>
+            <p class="mt-3">
+              "Настоящий ИИ для безопасности должен быть параноиком, но с высшим образованием"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
